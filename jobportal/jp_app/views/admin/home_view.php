@@ -9,7 +9,7 @@
 <body>
 <div class="loginwrap">
   <div class="loginfrm">
-    <img src="<?php echo base_url('public/images/admin_images/logo.jpeg');?>" class="mainlogologin">
+    <img src="<?php echo base_url('public/images/admin_images/logo.jpeg');?>" class="mainlogologin" style="height: 70px; width: 210px;">
      <div class="err"><?php echo $msg;?></div>
     <form method="post" action="">
       <div class="formwrp">

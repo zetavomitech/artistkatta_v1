@@ -14,20 +14,20 @@
 <?php $this->load->view('common/header'); ?>
 <!--/Header--> 
 <!--Search Block-->
-<div class="top-colSection">
+<!-- <div class="top-colSection">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="candidatesection">          
           <div class="col-md-9">            
-            <?php echo form_open_multipart('job_search',array('name' => 'jsearch', 'id' => 'jsearch'));?>            
+            <?php //echo form_open_multipart('job_search',array('name' => 'jsearch', 'id' => 'jsearch'));?>            
             <div class="input-group">      
        		<input type="text" name="job_params" id="job_params" class="form-control" placeholder="Job title or Skill" value="<?php echo $param;?>" />
               <span class="input-group-btn">
                  <input type="submit" name="job_submit" class="btn" id="job_submit" value="Find" />
               </span>
             </div>            
-            <?php echo form_close();?> </div>
+            <?php //echo form_close();?> </div>
             <div class="col-md-3">           
             <input type="submit" value="Upload Resume" title="job search engine" class="postjobbtn" alt="job search engine" onClick="document.location='<?php echo base_url('login');?>'" />
             <div class="clear"></div>
@@ -38,10 +38,10 @@
       <div class="clear"></div>
     </div>
   </div>
-</div>
+</div> -->
 <!--/Search Block--> 
 <!--Latest Jobs Block-->
-<div class="innerpageWrap">
+<div class="innerpageWrap" style="margin-top: 60px;">
 <div class="container">
   <div class="row"> 
     

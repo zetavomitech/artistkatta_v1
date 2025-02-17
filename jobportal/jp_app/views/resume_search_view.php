@@ -14,14 +14,14 @@
 <?php $this->load->view('common/header'); ?>
 <!--/Header--> 
 <!--Search Block-->
-<div class="top-colSection">
+<!-- <div class="top-colSection">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="employersection">
           
           <div class="col-md-9">            
-            <?php echo form_open_multipart('resume_search/search',array('name' => 'rsearch', 'id' => 'rsearch'));?>
+            <?php //echo form_open_multipart('resume_search/search',array('name' => 'rsearch', 'id' => 'rsearch'));?>
             
             <div class="input-group">      
        		<input type="text" name="resume_params" id="resume_params" class="form-control" placeholder="Skill or Job Title" value="<?php echo $param;?>" />
@@ -30,10 +30,10 @@
               </span>
             </div> 
             
-            <?php echo form_close();?> </div>
+            <?php //echo form_close();?> </div>
             
             <div class="col-md-3">            
-            <a href="<?php echo base_url('employer/post_new_job');?>" title="jobs" class="postjobbtn">Post a Job</a>
+            <a href="<?php //echo base_url('employer/post_new_job');?>" title="jobs" class="postjobbtn">Post a Job</a>
             <div class="clear"></div>
           </div>
             
@@ -43,11 +43,11 @@
       <div class="clear"></div>
     </div>
   </div>
-</div>
+</div> -->
 <!--/Search Block--> 
 <!--Latest Jobs Block-->
 <div class="innerpageWrap">
-<div class="container">
+<div class="container" style="margin-top: 30px;">
   <div class="row"> 
     
     <!--Left Col-->
@@ -69,7 +69,7 @@
       <div class="boxwraper">
         <div class="titlebar">
           <div class="row">
-            <div class="col-md-6"><b><?php echo $param;?> resume</b></div>
+            <div class="col-md-6 text-center"><b><?php echo $param;?> Resume</b></div>
             <div class="col-md-6 text-right"><strong>Resume <?php echo $from_record.' - '.$page;?> of <?php echo ($total_rows>20)?'20':$total_rows;?></strong> </div>
           </div>
         </div>

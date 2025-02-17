@@ -115,7 +115,7 @@
 <!--/Search Block--> 
 <!--Latest Jobs Block-->
 <div class="innerpageWrap">
-<div class="container">
+<div class="container" style="margin-top: -300px;">
   <div class="row"> 
     
     <!--Left Col--> 

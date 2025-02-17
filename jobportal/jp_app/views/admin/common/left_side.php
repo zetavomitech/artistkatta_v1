@@ -19,6 +19,7 @@
       <li> <a href="<?php echo base_url('admin/cities');?>"><i class="fa fa-angle-double-right"></i><span>Manage Cities</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/prohibited_keyword');?>"><i class="fa fa-angle-double-right"></i><span>Manage Prohibited Keywords</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/skills');?>"><i class="fa fa-angle-double-right"></i><span>Manage Skills</span> </a> </li>
+      <li> <a href="<?php echo base_url('admin/homepagesetting');?>"><i class="fa fa-angle-double-right"></i><span>Home page setting</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/home/logout');?>"><i class="fa fa-angle-double-right"></i><span>Logout</span> </a> </li>
     </ul>
   </section>

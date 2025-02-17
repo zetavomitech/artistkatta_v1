@@ -185,37 +185,66 @@
         <span class="text-indigo-600 text-xl bg-indigo-100 p-2 rounded-full">
           <i class="fas fa-music"></i>
         </span>
-        <span class="font-medium">Music</span>
+        <!-- <span class="font-medium">Music </span> -->
+        <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+          <a href="#"><span class="font-medium">Music</span></a>
+        <?php } else { ?>
+          <a href="<?php echo base_url('jobseeker-signup'); ?>"><span class="font-medium">Music</span></a>
+        <?php } ?>
       </button>
       <button class="flex items-center gap-3 px-6 py-4 bg-white text-gray-700 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform talent-button">
         <span class="text-indigo-600 text-xl bg-indigo-100 p-2 rounded-full">
           <i class="fas fa-microphone-alt"></i>
         </span>
-        <span class="font-medium">Singer</span>
+        <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+          <a href="#"><span class="font-medium">Singer</span></a>
+        <?php } else { ?>
+          <a href="<?php echo base_url('jobseeker-signup'); ?>"><span class="font-medium">Singer</span></a>
+        <?php } ?>
       </button>
       <button class="flex items-center gap-3 px-6 py-4 bg-white text-gray-700 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform talent-button">
         <span class="text-indigo-600 text-xl bg-indigo-100 p-2 rounded-full">
           <i class="fas fa-paint-brush"></i>
         </span>
-        <span class="font-medium">Painter</span>
+        <!-- <span class="font-medium">Painter</span> -->
+        <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+          <a href="#"><span class="font-medium">Painter</span></a>
+        <?php } else { ?>
+          <a href="<?php echo base_url('jobseeker-signup'); ?>"><span class="font-medium">Painter</span></a>
+        <?php } ?>
       </button>
       <button class="flex items-center gap-3 px-6 py-4 bg-white text-gray-700 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform talent-button">
         <span class="text-indigo-600 text-xl bg-indigo-100 p-2 rounded-full">
           <i class="fas fa-theater-masks"></i>
         </span>
-        <span class="font-medium">Actor</span>
+        <!-- <span class="font-medium">Actor</span> -->
+        <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+          <a href="#"><span class="font-medium">Actor</span></a>
+        <?php } else { ?>
+          <a href="<?php echo base_url('jobseeker-signup'); ?>"><span class="font-medium">Actor</span></a>
+        <?php } ?>
       </button>
       <button class="flex items-center gap-3 px-6 py-4 bg-white text-gray-700 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform talent-button">
         <span class="text-indigo-600 text-xl bg-indigo-100 p-2 rounded-full">
           <i class="fas fa-user-tie"></i>
         </span>
-        <span class="font-medium">Casting Director</span>
+        <!-- <span class="font-medium">Casting Director</span> -->
+        <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+          <a href="#"><span class="font-medium">Casting Director</span></a>
+        <?php } else { ?>
+          <a href="<?php echo base_url('jobseeker-signup'); ?>"><span class="font-medium">Casting Director</span></a>
+        <?php } ?>
       </button>
       <button class="flex items-center gap-3 px-6 py-4 bg-white text-gray-700 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform talent-button">
         <span class="text-indigo-600 text-xl bg-indigo-100 p-2 rounded-full">
           <i class="fas fa-shoe-prints"></i>
         </span>
-        <span class="font-medium">Dancer</span>
+        <!-- <span class="font-medium">Dancer</span> -->
+        <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+          <a href="#"><span class="font-medium">Dancer</span></a>
+        <?php } else { ?>
+          <a href="<?php echo base_url('jobseeker-signup'); ?>"><span class="font-medium">Dancer</span></a>
+        <?php } ?>
       </button>
     </div>
   </div>

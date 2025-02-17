@@ -15,7 +15,7 @@
 <aside class="right-side"> 
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1> Cities Management System 
+    <h1> Cities Management System  
       <!--<small>advanced tables</small>--> 
     </h1>
     <ol class="breadcrumb">
@@ -46,7 +46,7 @@
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">All Cities</h3>
+            <h3 class="box-title">All Setting</h3>
             <!--Pagination-->
             <div class="paginationWrap"> <?php echo ($result)?$links:'';?> </div>
           </div>

@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-  <?php //$this->load->view('common/meta_tags'); ?>
+  <?php //$this->load->view('common/meta_tags'); 
+  ?>
   <meta name="keywords"
     content="Artist Katta,Talent Konnect, Singer, Painter, Musician,Production house,Actor etc.">
-  <!-- <title><?php //echo $title; ?></title> -->
-   <title>Artist Katta</title>
-   <meta name="description" content="">
+  <!-- <title><?php //echo $title; 
+              ?></title> -->
+  <title>Artist Katta</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^3.2.7/dist/tailwind.min.css" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -535,7 +537,11 @@
               <div class="p-4 text-center">
                 <h2 class="text-xl font-semibold text-gray-800">Alex Painter</h2>
                 <!-- <p class="text-gray-500">Painter</p> -->
-                <a href="#" class="btn">Painter</a>
+                <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+                  <a href="#" class="btn">Painter</a>
+                <?php } else { ?>
+                  <a href="<?php echo base_url('jobseeker-signup'); ?>" class="btn">Painter</a>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -547,7 +553,11 @@
               <div class="p-4 text-center">
                 <h2 class="text-xl font-semibold text-gray-800">Sophie Singer</h2>
                 <!-- <p class="text-gray-500">Singer</p> -->
-                <a href="#" class="btn">Singer</a>
+                <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+                  <a href="#" class="btn">Singer</a>
+                <?php } else { ?>
+                  <a href="<?php echo base_url('jobseeker-signup'); ?>" class="btn">Singer</a>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -559,7 +569,11 @@
               <div class="p-4 text-center">
                 <h2 class="text-xl font-semibold text-gray-800">Michael Actor</h2>
                 <!-- <p class="text-gray-500">Actor</p> -->
-                <a href="#" class="btn">Actor</a>
+                <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+                  <a href="#" class="btn">Actor</a>
+                <?php } else { ?>
+                  <a href="<?php echo base_url('jobseeker-signup'); ?>" class="btn">Actor</a>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -571,7 +585,12 @@
               <div class="p-4 text-center">
                 <h2 class="text-xl font-semibold text-gray-800">Ella Dancer</h2>
                 <!-- <p class="text-gray-500">Dancer</p> -->
-                <a href="#" class="btn">Dancer</a>
+                <!-- <a href="#" class="btn">Dancer</a> -->
+                <?php if ($this->session->userdata('is_user_login') == TRUE) { ?>
+                  <a href="#" class="btn">Dancer</a>
+                <?php } else { ?>
+                  <a href="<?php echo base_url('jobseeker-signup'); ?>" class="btn">Dancer</a>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -598,8 +617,8 @@
                 class="w-[300px] h-[450px] object-cover rounded-t-xl" />
               <div class="p-4 text-center">
                 <h2 class="text-xl font-semibold text-gray-800">Sophie Singer</h>
-                <!-- <p class="text-gray-500">Singer</p> -->
-                <a href="#" class="btn">Singer</a>
+                  <!-- <p class="text-gray-500">Singer</p> -->
+                  <a href="#" class="btn">Singer</a>
               </div>
             </div>
           </div>

@@ -11,11 +11,11 @@
 <!--Header-->
 <?php $this->load->view('common/header'); ?>
 <!--/Header-->
-<div class="container detailinfo">
+<div class="container detailinfo" style="margin-top: 10px" >
   <div class="row"> <?php echo form_open_multipart('contact_us',array('name' => 'frm_contact_us', 'id' => 'frm_contact_us', 'onSubmit' => 'return validate_contact_form(this);'));?>
-    <div class="col-md-10" style="margin-top: 100px;">
+    <div class="col-md-10" style="margin-top: 100px; width: initial;">
       <p></p>
-      <h2> Contact Us</h2>
+      <h2 style="text-align: center;"> Contact Us</h2>
       <!--Account info-->
 		<?php echo $this->session->flashdata('success_msg');?>
       <!--Professional info-->

@@ -226,23 +226,23 @@
 
             if ($this->session->userdata('is_employer') == TRUE):
             ?>
-              <li <?php echo active_link(''); ?>><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+              <li <?php echo active_link(''); ?>><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
               <li <?php echo active_link('employer'); ?>><a href="<?php echo base_url('employer/dashboard'); ?>" title="My Dashboard">My Dashboard</a> </li>
               <li <?php echo active_link('search-resume'); ?>><a href="<?php echo base_url('search-resume'); ?>" title="Search Resume">Search Resume</a></li>
               <li <?php echo active_link('contact-us'); ?>><a href="<?php echo base_url('contact-us'); ?>" title="Contact Us">Contact Us</a></li>
-              <li <?php echo active_link('indeed_jobs'); ?>><a href="<?php echo base_url('indeed_jobs'); ?>" title="Indeed Jobs">Indeed Jobs</a></li>
+              <!-- <li <?php //echo active_link('indeed_jobs'); ?>><a href="<?php //echo base_url('indeed_jobs'); ?>" title="Indeed Jobs">Indeed Jobs</a></li> -->
             <?php elseif ($this->session->userdata('is_job_seeker') == TRUE): ?>
-              <li <?php echo active_link(''); ?>><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+              <li <?php echo active_link(''); ?>><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
               <li <?php echo active_link('jobseeker'); ?>><a href="<?php echo base_url('jobseeker/dashboard'); ?>" title="My Dashboard">My Dashboard</a> </li>
               <li <?php echo active_link('search-jobs'); ?>><a href="<?php echo base_url('search-jobs'); ?>" title="Search Jobs">Jobs</a></li>
-              <li <?php echo active_link('contact-us'); ?>><a href="<?php echo base_url('contact-us'); ?>" title="Agencies">Agencies</a></li>
+              <li <?php echo active_link('contact-us'); ?>><a href="<?php echo base_url('contact-us'); ?>" title="Contact Us">Contact Us</a></li>
               <!-- <li <?php echo active_link('indeed_jobs'); ?>><a href="<?php echo base_url('indeed_jobs'); ?>" title="Indeed Jobs">Indeed Jobs</a></li> -->
             <?php else: ?>
               <li class="inactive" <?php echo active_link(''); ?>><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-              <li <?php echo active_link('search-jobs'); ?>><a href="<?php echo base_url('search-jobs'); ?>" title="Search Talent">Talent</a> </li>
-              <li <?php echo active_link('search-resume'); ?>><a href="<?php echo base_url('search-resume'); ?>" title="Search Jobs">Jobs</a></li>
+              <li <?php echo active_link('search-jobs'); ?>><a href="<?php echo base_url('search-jobs'); ?>" title="Search Talent">Jobs</a> </li>
+              <li <?php echo active_link('search-resume'); ?>><a href="<?php echo base_url('search-resume'); ?>" title="Search Jobs">Talent</a></li>
               <li <?php echo active_link('about-us.html'); ?>><a href="<?php echo base_url('about-us.html'); ?>" title="Agencies">Agencies</a></li>
-              <li <?php echo active_link('contact-us'); ?>><a href="<?php echo base_url('contact-us'); ?>" title="Events">Events</a></li>
+              <li <?php echo active_link('contact-us'); ?>><a href="<?php echo base_url('contact-us'); ?>" title="Contact Us">Contact Us</a></li>
               <!-- <li <?php echo active_link('indeed_jobs'); ?>><a href="<?php echo base_url('indeed_jobs'); ?>" title="Indeed Jobs">Indeed Jobs</a></li> -->
             <?php endif; ?>
           </ul>
@@ -256,7 +256,8 @@
             <!-- <a href="<?php echo base_url('employer-signup'); ?>" class="lookingbtn">Post a Job</a>
           <a href="<?php echo base_url('jobseeker-signup'); ?>" class="hiringbtn">Job Seeker</a> -->
             <a href="<?php echo base_url('login'); ?>" class="loginBtn button sign-in" title="Jobs openings">Login</a>
-            <a href="<?php echo base_url('signup'); ?>" class="loginBtn button sign-up" title="Jobs openings">Signup</a>
+            <!-- <a href="<?php //echo base_url('signup_link'); ?>" class="loginBtn button sign-up" title="Jobs openings">Signup</a> -->
+            <a href="<?php echo base_url('jobseeker-signup'); ?>" class="loginBtn button sign-up" title="Sign up" >SignUp</a>
           <?php else:
             $c_folder = ($this->session->userdata('is_employer') == TRUE) ? 'employer' : 'jobseeker';
           ?>

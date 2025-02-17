@@ -22,6 +22,26 @@ INSERT INTO `pp_ad_codes` VALUES ('1', '<a href=\"#\"><img src=\"http://codearee
 COMMIT;
 
 -- ----------------------------
+--  Table structure for `pp_home_page`
+-- ----------------------------
+DROP TABLE IF EXISTS `pp_home_page`;
+CREATE TABLE `pp_home_page` (
+  `ID` int(4) NOT NULL AUTO_INCREMENT,
+  `image_1` text, 
+  `image_2` text, 
+  PRIMARY KEY (`ID`)
+
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+--  Records of `pp_home_page`
+-- ----------------------------
+BEGIN;
+INSERT INTO `pp_home_page` VALUES ('1', '<a href=\"#\"><img src=\"http://codeareena.com/jobportal/public/images/ad728.png\" /></a>', '<a href=\"#\"><img src=\"http://codeareena.com/jobportal/public/images/banner160x600.jpg\" /></a>');
+COMMIT;
+
+
+-- ----------------------------
 --  Table structure for `pp_admin`
 -- ----------------------------
 DROP TABLE IF EXISTS `pp_admin`;
